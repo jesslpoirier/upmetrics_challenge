@@ -1,0 +1,187 @@
+<div class="brand">Upmetrics Sports</div>
+<div class="address-bar">737 Maquam Shore Road | Swanton, VT 05488 | 802.582.9207</div>
+
+<%= render 'layouts/navigation' %>
+
+<div class="container">
+
+    <div class="row">
+        <div class="box">
+          <div class="container">
+            <h1>Edit Profile</h1>
+            <div class="row">
+              <!-- left column -->
+              <div class="col-md-3">
+                <div class="text-center">
+                  <img src="//placehold.it/100" class="avatar img-circle" alt="avatar">
+                  <h6>Upload a different photo...</h6>
+                  <input type="file" class="form-control">
+                </div>
+              </div>
+              <!-- edit form column -->
+              <div class="col-md-9 personal-info">
+                <h3>Personal info</h3>
+                <form class="form-horizontal" role="form">
+                  <div class="form-group">
+                    <label class="col-lg-3 control-label">First name:</label>
+                    <div class="col-lg-8">
+                      <input class="form-control" type="text" value="Jessica">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-lg-3 control-label">Last name:</label>
+                    <div class="col-lg-8">
+                      <input class="form-control" type="text" value="Poirier">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-lg-3 control-label">Email:</label>
+                    <div class="col-lg-8">
+                      <input class="form-control" type="text" value="jesslpoirier@gmail.com">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-lg-3 control-label">Height:</label>
+                    <div class="col-lg-8">
+                      <input class="form-control" type="text" value="">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-lg-3 control-label">Weight:</label>
+                    <div class="col-lg-8">
+                      <div class="ui-select">
+                        <select id="user_weight" class="form-control">
+                          <option value="100-120">100-120</option>
+                          <option value="120-140">120-140</option>
+                          <option value="140-160">140-160</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-lg-3 control-label">Visibility</label>
+                    <div class="col-lg-8">
+                      <div class="ui-select">
+                        <select id="user_weight" class="form-control">
+                          <option value="Public">Public</option>
+                          <option value="Private">Private</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-md-3 control-label"></label>
+                    <div class="col-md-8">
+                      <input type="button" class="btn btn-primary" value="Save Changes">
+                      <span></span>
+                      <input type="reset" class="btn btn-default" value="Cancel">
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+      <div class="row">
+        <div class="box">
+          <div class="container">
+          <div class="col-md-9 personal-info pull-right">
+            <h3>Add Sport Data:</h3>
+            <div class="row">
+            <form class="form-horizontal" role="form">
+              <div class="form-group">
+                <label class="col-lg-3 control-label" for="date">Date</label>
+                <div class="col-lg-8">
+                <input class="form-control" id="date" name="date" placeholder="MM/DD/YYY" type="text"/>
+              </div>
+              </div>
+              <div class="form-group">
+                <label class="col-lg-3 control-label">Sport</label>
+                <div class="col-lg-8">
+                  <div class="ui-select">
+                    <select id="user_weight" class="form-control">
+                      <option value="Swimming">Swimming</option>
+                      <option value="Basketball">Basketball</option>
+                      <option value="Football">Football</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-lg-3 control-label">Time:</label>
+                <div class="col-lg-8">
+                  <input class="form-control" type="text" value="1 hour">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-md-3 control-label"></label>
+                <div class="col-md-8">
+                  <input type="button" class="btn btn-primary" value="Save Changes">
+                  <span></span>
+                  <input type="reset" class="btn btn-default" value="Cancel">
+                </div>
+              </div>
+            </form>
+          </div>
+          </div>
+          </div>
+      </div>
+      </div>
+  <div class="row">
+    <div class="box">
+      <div class="container">
+        <div class="col-md-9 personal-info pull-right">
+          <h3>Your Sports Info:</h3>
+          <div class="row">
+              <label class="col-lg-3">Playing</label>
+            <div class="col-lg-6">
+              <ul class="list-group">
+                <li class="list-group-item">Swimming<span class="glyphicon glyphicon-star" aria-hidden="true"></span></li>
+                <li class="list-group-item">Soccer<span class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span></li>
+                <li class="list-group-item">Basketball<span class="glyphicon glyphicon-certificate" aria-hidden="true"></span></li>
+              </ul>
+            </div>
+          </div>
+              <div class="row">
+                <label class="col-lg-3">Teams</label>
+              <div class="col-lg-6">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title">Rebels</h3>
+              </div>
+              <div class="panel-body">
+                <ul class="list-group">
+                  <li class="list-group-item">Tyler Brock</li>
+                  <li class="list-group-item">Desiree Poirier</li>
+                  <li class="list-group-item">Isaiah Poirier</li>
+                </ul>
+              </div>
+            </div>
+            </div>
+              </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    </div>
+
+</div>
+<!-- /.container -->
+
+<!-- Script to activate date-picker-->
+<script>
+	$(document).ready(function(){
+		var date_input=$('input[name="date"]'); //our date input has the name "date"
+		var container=$('.bootstrap-iso form').length>0 ? $('.bootstrap-iso form').parent() : "body";
+		var options={
+			format: 'mm/dd/yyyy',
+			container: container,
+			todayHighlight: true,
+			autoclose: true,
+		};
+		date_input.datepicker(options);
+	})
+</script>
